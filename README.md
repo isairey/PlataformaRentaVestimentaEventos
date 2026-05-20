@@ -213,7 +213,7 @@ Panel administrativo.
 # 📂 Estructura del proyecto
 
 ```bash
-event-attire-rental-system/
+PlataformaRentaVestimentaEventos/
 │
 ├── frontend/
 ├── backend/
@@ -267,7 +267,7 @@ Usuario → Explorar prendas → Reservar → Confirmación → Historial
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/your-repository/event-attire-rental-system.git
+git clone https://github.com/isairey/PlataformaRentaVestimentaEventos.git
 ```
 
 ---
@@ -275,7 +275,7 @@ git clone https://github.com/your-repository/event-attire-rental-system.git
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd event-attire-rental-system
+cd PlataformaRentaVestimentaEventos
 ```
 
 ---
