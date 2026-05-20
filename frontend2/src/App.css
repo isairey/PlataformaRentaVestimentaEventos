@@ -1,0 +1,195 @@
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f7f7f7; /* Light background color */
+  background-image: url('https://via.placeholder.com/1500'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+/* App container */
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+h1 {
+  font-size: 3.5em;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Filters section */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filters select,
+.filters input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.filters input {
+  width: 300px;
+}
+
+.filters select {
+  width: 220px;
+}
+
+/* Hover effect for filters */
+.filters select:focus,
+.filters input:focus {
+  border-color: #646cff;
+}
+
+/* Clothes grid section */
+.clothes-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 0 20px;
+}
+
+.cloth-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 260px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cloth-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Cloth image styling */
+.cloth-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cloth-card img:hover {
+  transform: scale(1.1);
+}
+.clothes-grid {
+  display: flex;
+  flex-wrap: wrap;  /* Ensures wrapping to new lines */
+  gap: 20px; /* Space between items */
+  padding: 0 20px;
+}
+/* Cloth name and description */
+.cloth-card h3 {
+  margin: 15px 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.cloth-card h3:hover {
+  color: #646cff;
+}
+
+.cloth-card p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.cloth-card p:last-child {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Rent price styling */
+.cloth-card p strong {
+  color: #1a73e8;
+}
+
+/* Button styling */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #646cff;
+  border-color: #646cff;
+}
+/* Cloth image styling */
+.cloth-card img {
+  max-width: 100%;           /* Ensures the image takes up only available space */
+  height: 200px;             /* Sets a fixed height for uniformity */
+  width: auto;               /* Maintains the aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;         /* Ensures the image fills the space without distortion */
+  transition: transform 0.3s ease;
+}
+
+.cloth-card img:hover {
+  transform: scale(1.05);    /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .clothes-grid {
+    padding: 0;
+  }
+
+  .cloth-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .filters input {
+    width: 100%;
+  }
+}
