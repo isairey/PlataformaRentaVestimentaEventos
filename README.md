@@ -355,27 +355,7 @@ http://localhost:5173
 
 ---
 
-# 📸 Vista previa
 
-## 🖥️ Interfaces del sistema
-
-<div align="center">
-
-### 👗 Catálogo de prendas
-![Catalog](https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200)
-
-### 💍 Vestimenta para eventos
-![Wedding](https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200)
-
-### 🛒 Sistema de reservaciones
-![Booking](https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200)
-
-### 📊 Gestión moderna
-![Dashboard](https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200)
-
-</div>
-
----
 
 # 🧠 Objetivos del proyecto
 
